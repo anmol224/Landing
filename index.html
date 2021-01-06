@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle "></div>
+        </header>
+        <video src="maldives.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring the world</h3>
+            <p>Tours and Travels grab the best deals on Domestic and International Tour Packages, Flight Bookings, Hotel Bookings, Forex & Visa .</p>
+            <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><i  class="fab fa-facebook fa-3x"></i></a></li>
+            <li><a  href="#" ><i  class="fab fa-twitter fa-3x"></i></a></li>
+            <li><a  href="#"><i  class="fab fa-instagram fa-3x"></i></a></li>
+            
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const toggle=document.querySelector('.toggle');
+        const showcase=document.querySelector('.showcase');
+        toggle.addEventListener('click',() =>
+        {
+            showcase.classList.toggle('active')            
+            toggle.classList.toggle('active')
+        })
+        
+    </script>
+</body>
+</html>

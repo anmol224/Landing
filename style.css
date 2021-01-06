@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+*
+{
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;   
+ font-family: 'Poppins',sans-serif;
+}
+.showcase
+{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    transition: 1.5s;
+    background-color:black;
+    color:white;
+    z-index: 2;
+}
+.showcase.active 
+{
+    position:absolute;
+    right:300px;
+}
+.showcase header
+{
+    position:absolute;
+    top:0;
+ left:  0;
+ padding: 40px 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    justify-content: space-between;
+  
+  
+}
+.logo
+{
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.toggle
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+  
+    background-image: url('menu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    cursor: pointer;
+
+}
+.toggle.active
+{
+    background: url('close.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.showcase video
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+object-fit:cover;
+opacity: 0.8;
+   width: 100vw;
+   height: 100vh;
+ 
+}
+.overlay
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+    background-color:rgba(129, 100, 209, 0.6);
+    opacity: 0.3;
+    mix-blend-mode: overlay;
+   width: 100vw;
+   height: 100vh;
+}
+.text
+{
+    position: relative;
+    z-index: 10;
+}
+.text h2
+{
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.text h3
+{
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.text p
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.6rem;
+    margin:20px 0px;
+    max-width: 800px;
+}
+.text a{
+    display: inline-block;
+  
+    text-decoration: none;
+    font-size: 1.3rem;
+    background-color:white;
+    padding: 10px 20px;
+    color: black;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.text a:hover
+{
+    letter-spacing: 8px;
+}
+.social
+{
+    position:absolute;
+    bottom:20px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+  
+}
+.social li
+
+{
+    list-style: none;
+}
+.social li a i
+{
+    color: white;
+   margin-right: 3px;
+   transform: scale(0.6);
+   transition: 0.6s;
+}
+.social li a i:hover
+{
+    transform: scale(0.6)  translateY(-15px);
+
+}
+.menu
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+.menu ul 
+{
+    list-style: none;
+}
+.menu ul li a 
+{
+    text-decoration:none;
+    font-size: 1.4rem;
+    color: black;
+}
+.menu ul li a:hover
+{
+    color:rgba(106, 136, 238, 0.9)
+}
+@media(max-width:800px)
+{
+    .showcase,.showcase header
+    {
+        padding: 40px;
+    }
+    .showcase .text h2
+{
+    font-size: 2.2rem;
+}
+.showcase .text h3 
+{
+    font-size: 1.4rem;
+}
+.showcase video 
+{
+    width:100%;
+    height:100vh;
+}
+.showcase.active
+{
+    position: absolute;
+    right:50vw;
+}
+.menu
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100%;
+    font-size: 1rem;
+
+}
+}
